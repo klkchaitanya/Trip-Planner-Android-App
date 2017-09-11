@@ -1,0 +1,101 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <fragment android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.appdroid.com.tripplanner.MapsActivity"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="154dp"
+        >
+
+        <Button
+            android:id="@+id/btnRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restaurants" />
+
+        <Button
+            android:id="@+id/btnMuseum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Museums"
+            android:layout_below="@+id/btnRestaurant"
+            android:layout_toRightOf="@+id/btnNightClub"
+            android:layout_toEndOf="@+id/btnNightClub" />
+
+        <Button
+            android:id="@+id/btnNightClub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Night Clubs"
+            android:layout_below="@+id/btnRestaurant"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cafe"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnLodging"
+            android:layout_toEndOf="@+id/btnLodging" />
+
+        <Button
+            android:id="@+id/btnLodging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lodging"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnRestaurant"
+            android:layout_toEndOf="@+id/btnRestaurant" />
+
+        <Button
+            android:id="@+id/btnSpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SPA"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:id="@+id/btnAmusement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amusement parks"
+            android:layout_below="@+id/btnCafe"
+            android:layout_toRightOf="@+id/btnMuseum"
+            android:layout_toEndOf="@+id/btnMuseum" />
+
+        <Button
+            android:id="@+id/btnGym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GYM"
+            android:layout_below="@+id/btnNightClub"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List View"
+        android:id="@+id/btnListView"
+        android:layout_below="@+id/btnMuseum"
+        android:layout_alignRight="@+id/btnSpa"
+        android:layout_alignEnd="@+id/btnSpa"
+        android:layout_gravity="left|bottom" />
+</FrameLayout>

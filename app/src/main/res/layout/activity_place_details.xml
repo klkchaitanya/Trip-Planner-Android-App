@@ -1,0 +1,195 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.appdroid.com.tripplanner.PlaceDetails"
+    android:orientation="vertical"
+    android:fillViewport="false"
+    >
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="700dp"
+    >
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/ivBig"
+            android:src="@drawable/oasis"
+            android:layout_centerHorizontal="true" />
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Place Name"
+            android:id="@+id/tvPlaceName"
+            android:layout_marginTop="50dp"
+            android:textSize="30dp"
+            android:layout_below="@+id/ivBig" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Description of the place"
+            android:id="@+id/tvPlaceAddress"
+            android:layout_below="@+id/tvPlaceName"
+            android:layout_alignLeft="@+id/tvPlaceName"
+            android:layout_alignStart="@+id/tvPlaceName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hours : "
+            android:id="@+id/tvPlaceHours"
+            android:layout_marginTop="49dp"
+            android:layout_below="@+id/tvPlaceAddress" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="-"
+            android:id="@+id/tvDash"
+            android:layout_toRightOf="@+id/tvPlaceName"
+            android:layout_toEndOf="@+id/tvPlaceName" />
+
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visited?"
+            android:id="@+id/cbVisited"
+        android:layout_alignTop="@+id/tvRatingTxt"
+        android:layout_alignRight="@+id/ivBig"
+        android:layout_alignEnd="@+id/ivBig"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Now"
+        android:id="@+id/tvNowTxt"
+        android:layout_above="@+id/tvRating"
+        android:layout_toRightOf="@+id/tvPlaceHours"
+        android:layout_toEndOf="@+id/tvPlaceHours" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="-"
+        android:id="@+id/tvDash"
+        android:layout_alignTop="@+id/tvNowTxt"
+        android:layout_toRightOf="@+id/tvNowTxt"
+        android:layout_toEndOf="@+id/tvNowTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Close"
+        android:id="@+id/tvCloseTxt"
+        android:layout_alignTop="@+id/tvDash"
+        android:layout_toRightOf="@+id/tvDash"
+        android:layout_toEndOf="@+id/tvDash" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rating : "
+        android:id="@+id/tvRating"
+        android:layout_below="@+id/tvPlaceHours"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="4/5"
+        android:id="@+id/tvRatingTxt"
+        android:layout_alignTop="@+id/tvRating"
+        android:layout_toRightOf="@+id/tvRating"
+        android:layout_toEndOf="@+id/tvRating" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD REVIEW/RATING"
+        android:id="@+id/btnAddRating"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Phone : "
+        android:id="@+id/tvPhone"
+        android:layout_below="@+id/tvRating"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="International Number"
+        android:id="@+id/tvPhoneTxt"
+        android:layout_below="@+id/tvRatingTxt"
+        android:layout_alignLeft="@+id/tvRatingTxt"
+        android:layout_alignStart="@+id/tvRatingTxt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Website :"
+        android:id="@+id/tvWebsite"
+        android:layout_below="@+id/tvPhone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Website"
+        android:id="@+id/tvWebsiteTxt"
+        android:layout_below="@+id/tvPhone"
+        android:layout_toRightOf="@+id/tvWebsite"
+        android:layout_toEndOf="@+id/tvWebsite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Days :"
+        android:id="@+id/tvDays"
+        android:layout_below="@+id/tvWebsite"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Days"
+        android:id="@+id/tvDaysTxt"
+        android:layout_alignTop="@+id/tvDays"
+        android:layout_toRightOf="@+id/tvDays"
+        android:layout_toEndOf="@+id/tvDays" />
+
+</RelativeLayout>
+</ScrollView>

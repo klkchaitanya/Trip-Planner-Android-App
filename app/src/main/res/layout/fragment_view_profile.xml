@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.appdroid.com.tripplanner.ViewProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none|textPersonName"
+        android:ems="10"
+        android:id="@+id/etName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:hint="Name"
+        android:editable="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none|textPersonName"
+        android:ems="10"
+        android:id="@+id/etUsername"
+        android:layout_below="@+id/etName"
+        android:layout_centerHorizontal="true"
+        android:hint="Username"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none|textPassword"
+        android:ems="10"
+        android:id="@+id/etPassword"
+        android:layout_below="@+id/etUsername"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none|textPassword"
+        android:ems="10"
+        android:id="@+id/etConfirmPswd"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:hint="Confirm Password"
+        android:editable="false"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none|textEmailAddress"
+        android:ems="10"
+        android:id="@+id/etEmail"
+        android:layout_below="@+id/etConfirmPswd"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:editable="false"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EDIT PROFILE"
+        android:id="@+id/btnEditProfile"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_alignStart="@+id/etEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/btnSave"
+        android:layout_alignTop="@+id/btnEditProfile"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_alignEnd="@+id/etEmail" />
+
+</RelativeLayout>
